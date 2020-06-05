@@ -74,7 +74,7 @@ class App extends Component {
           </button>
           {/* Remove Row */}
           <button
-            className="btn btn-primary mr-3 mb-4"
+            className="btn btn-danger mr-3 mb-4"
             value="remove-row"
             onClick={this.handleButtonClick}
           >
@@ -82,7 +82,7 @@ class App extends Component {
           </button>
           {/* Remove Column */}
           <button
-            className="btn btn-primary mr-3 mb-4"
+            className="btn btn-danger mr-3 mb-4"
             value="remove-column"
             onClick={this.handleButtonClick}
           >
