@@ -1,10 +1,12 @@
 import React from "react";
 
 const TableCell = (props) => {
-  let className = `text-center table-${props.color}`;
-
   return (
-    <td className={className} onClick={props.handleCellClick}>
+    <td
+      className="text-center"
+      onClick={props.handleCellClick}
+      style={{ backgroundColor: "white" }}
+    >
       0
     </td>
   );

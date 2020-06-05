@@ -6,7 +6,7 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      selectedColor: "default",
+      selectedColor: "white",
       numberOfRows: 8,
       numberOfColumns: 4,
     };
@@ -22,7 +22,7 @@ class App extends Component {
   // Function to apply color to the cell that is clicked
   handleCellClick = (e) => {
     console.log("Cell clicked");
-    console.log(e.target);
+    e.target.style.backgroundColor = this.state.selectedColor;
   };
 
   // Function to handle the button clicks to control the grid
@@ -96,11 +96,12 @@ class App extends Component {
             onChange={this.handleSelectColor}
           >
             <option value="white">Choose color</option>
-            <option value="red">Red</option>
-            <option value="orange">Orange</option>
-            <option value="yellow">Yellow</option>
-            <option value="green">Green</option>
-            <option value="blue">Blue</option>
+            <option value="#b8daff">Blue</option>
+            <option value="#d6d8db">Grey</option>
+            <option value="#c3e6cb">Green</option>
+            <option value="#f5c6cb">Red</option>
+            <option value="#ffeeba">Yellow</option>
+            <option value="#bee5eb">Aqua</option>
           </select>
         </div>
 
