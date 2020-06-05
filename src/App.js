@@ -29,20 +29,24 @@ class App extends Component {
   handleButtonClick = (e) => {
     let action = e.target.value;
 
+    // Adds rows to grid
     if (action === "add-row") {
       this.setState((state) => ({
         numberOfRows: state.numberOfRows + 1,
       }));
+      // Removes rows from grid, stops at 1 row
     } else if (action === "remove-row" && this.state.numberOfRows !== 1) {
       this.setState((state) => ({
         numberOfRows: state.numberOfRows - 1,
       }));
     }
 
+    // Adds columns to grid
     if (action === "add-column") {
       this.setState((state) => ({
         numberOfColumns: state.numberOfColumns + 1,
       }));
+      // Removes columns from grid, stops at 1 column
     } else if (action === "remove-column" && this.state.numberOfColumns !== 1) {
       this.setState((state) => ({
         numberOfColumns: state.numberOfColumns - 1,

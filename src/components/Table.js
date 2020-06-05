@@ -3,6 +3,8 @@ import TableRow from "./TableRow";
 
 const Table = (props) => {
   let rows = [];
+
+  // Handles the amount of rows for the grid
   for (let a = 0; a < props.numberOfRows; a++) {
     rows.push(
       <TableRow

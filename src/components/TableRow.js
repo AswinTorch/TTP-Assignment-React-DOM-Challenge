@@ -3,6 +3,8 @@ import TableCell from "./TableCell";
 
 const TableRow = (props) => {
   let columns = [];
+
+  // Handles the amount of columns for the grid
   for (let a = 0; a < props.numberOfColumns; a++) {
     columns.push(
       <TableCell
